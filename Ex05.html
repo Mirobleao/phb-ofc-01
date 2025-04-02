@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex01</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffd4ee;
+
+        }
+
+        .conatiner {
+            border: 1px solid #24fa07;
+            width: 19rem;
+            height: 18rem;
+            margin: 1rem auto;
+            border-radius: 5%;
+            background-color: #ff03a7af;
+            box-shadow: .5rem .5rem .3rem .1rem #24fa07;
+            padding: 1rem;
+        }
+
+        .titulo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            background-color: #ff03a7af;
+
+
+        }
+
+        .descricao {
+            font-size: .8rem;
+            background-color: #ff03a7af;
+
+        }
+
+        .preco {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-color: #ff03a7af;
+            text-align: center;
+
+        }
+
+        img {
+            height: 10rem;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+
+
+        <script>
+            /* 
+            comandos de saidas
+            declaraco de variaveis 
+            template string
+            */
+            var produto = prompt("Informe o produto: ")
+            var descricao = prompt("Descreva o produto: ")
+            var preco = prompt("Informe o preço do produto: ")
+            document.write("<img src='mercado.jpg' alt=logo do mercado>")
+
+            document.write(`<h1 class="titulo">${produto}</h1>`);
+            document.write(`<aside class="descricao">${descricao}</aside>`);
+            document.write(`<aside class="preco">R$${preco}</aside>`);
+
+        </script>
+    </div>
+</body>
+
+</html>
